@@ -1,6 +1,6 @@
-package com.example.demo;
+package com.example.demo.controller;
 
-import hero.RpgHero;
+import com.example.demo.hero.RpgHero;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +13,7 @@ public class HeroController {
     @RequestMapping("/api")
     public String sendHeroOnQuest(){
         hero.sendOnQuest("Petúnio", "Barbarian", "defeat the goblin lord");
-        return "hero sent!";
+        return "rpgHero sent!";
+
     }
 }
